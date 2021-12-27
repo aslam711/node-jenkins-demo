@@ -6,7 +6,7 @@ pipeline {
               sh ' echo "my home" '
             }
         }
-      stage('build') {
+      stage('unit test') {
           steps {
               sh ' echo "this is my build step" '
           } 
