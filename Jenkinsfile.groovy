@@ -13,17 +13,17 @@ pipeline {
         }
       stage('test') {
           steps {
-              sh ' This is my test" '
+              sh 'echo "This is my test" '
           } 
         }
       stage('LocalBuild') {
           steps {
-              sh ' echo " this my local build" '
+              sh ' echo  "this my local build" '
           } 
       }
       stage('push') {
           steps {
-              sh ' this is my artifact push" '
+              sh 'echo "this is my artifact push" '
             } 
       
         }
